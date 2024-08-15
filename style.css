@@ -1,0 +1,53 @@
+body {
+    font-family: 'Raleway';
+}
+
+h1 {
+
+    font-weight: 800;
+    font-size: 35px;
+}
+
+h2 {
+    font-weight: 800;
+
+}
+
+h5 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-size: 14px;
+}
+
+ul li a,
+ul li a:visited {
+    color: white !important;
+}
+
+ul li a:hover,
+ul li a:active {
+    color: purple !important;
+}
+
+ul li.active a {
+    color: white !important;
+}
+
+button.btn {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    background-color: purple;
+    border-color: purple;
+}
