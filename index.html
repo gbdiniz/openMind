@@ -16,35 +16,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/28ffdab0f6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- CABEÇALHO -->
     <header>
         <div
-            style="background: url(media/bg.jpg); height: 500px; background-repeat: no-repeat; background-size: cover;">
+            style="background: url(media/bg.jpg); height: 700px; background-repeat: no-repeat; background-size: cover; background-position: center center;">
             <div style="background: rgba(0, 0, 0, 0.52); overflow: hidden; height: 100%; z-index: 2;">
                 <div style="position: absolute; width: 100%; height: 100%; z-index: 2; color: white; ">
-                    <div class="row p-absolute z-2 m-0 px-3 py-2 align-items-center justify-content-between shadow">
-                        <div class="col-auto">
-                            <div class="d-flex align-items-center">
-                                <img height="70px" src="media/logo.png" alt="">
-                                <ul class="nav p-0 m-0">
-                                    <li class="list-inline-item px-3"><a href="">HOME</a></li>
-                                    <li class="list-inline-item pe-3"><a href="">SOBRE NÓS</a></li>
-                                    <li class="list-inline-item pe-3"><a href="">SUPORTE</a></li>
-                                </ul>
+                    <div class="row shadow z-2 justify-content-center m-0">
+                        <nav class="navbar navbar-expand-lg">
+                            <!-- <img height="70px" src="media/logo.png" alt=""> -->
+                            <div class="container py-3">
+                                <h2 class="pe-5">OPEN MIND</h2>
+                                <!-- <div class="col-auto d-none d-lg-block">
+                            <ul class="nav p-0 m-0">
+                                <li class="list-inline-item pe-5"><a href="">HOME</a></li>
+                                <li class="list-inline-item pe-5"><a href="">SOBRE NÓS</a></li>
+                                <li class="list-inline-item pe-5"><a href="">SUPORTE</a></li>
+                                <li class="list-inline-item pe-5"><a href="">CONTATO</a></li>
+                            </ul>
+                        </div> -->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa-solid fa-bars text-white"></i>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                    <ul class="navbar-nav ms-auto p-0 m-0">
+                                        <li class="nav-item text-end pe-lg-5"><a class="nav-link" href="">HOME</a></li>
+                                        <li class="nav-item text-end pe-lg-5"><a class="nav-link" href="">SOBRE NÓS</a></li>
+                                        <li class="nav-item text-end pe-lg-5"><a class="nav-link" href="">SUPORTE</a></li>
+                                        <li class="nav-item text-end pe-lg-5"><a class="nav-link" href="">CONTATO</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <ul class="nav p-0 m-0">
+                                <li class="list-inline-item pe-5"><a href="">HOME</a></li>
+                                <li class="list-inline-item pe-5"><a href="">SOBRE NÓS</a></li>
+                                <li class="list-inline-item pe-5"><a href="">SUPORTE</a></li>
+                                <li class="list-inline-item pe-5"><a href="">CONTATO</a></li>
+                            </ul> -->
                             </div>
-                        </div>
-                        <div class="col-auto">
-                            <button class="btn btn-primary px-4">NOSSOS JOGOS</button>
-                        </div>
+                        </nav>
+
                     </div>
-                    <div style="height: 64%;" class="d-flex align-items-center justify-content-center">
+
+                    <div class="d-flex align-items-center justify-content-center">
                         <div class="row justify-content-center">
                             <div class="col-auto text-center">
-                                <h2>OPEN MIND</h2>
-                                <h5>VEJA O NOSSO REPERTÓRIO DE<br> JOGOS AQUI MESMO!</h5>
-                                <button class="btn btn-primary shadow px-3 py-2">Saiba mais</button>
+                                <h1 class="pt-4">Um Estúdio dos Sonhos</h1>
+                                <h5 class="pb-4">ACHE NOSSOS JOGOS MAIS POPULARES AQUI!</h5>
+                                <div class="d-flex justify-content-center">
+                                    <div class="card border border-0 shadow card-header"
+                                        style="height: 400px; width: 80vw; max-width: 700px;"></div>
+                                </div>
+                                <!-- <button class="btn btn-primary shadow px-3 py-2">Saiba mais</button> -->
                             </div>
                         </div>
                     </div>
@@ -53,29 +81,236 @@
             </div>
 
         </div>
-
-
     </header>
-    <div class="d-flex justify-content-center">
-        <div class="card border border-0 shadow" style="height: 400px; width: 700px; margin-top: -60px;"></div>
-    </div>
-    
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <a href="/"
-                class="col-auto d-flex align-items-center justifynter link-dark text-decoration-none">
-                <img height="70px" src="media/logoc.png" alt="">
-                <p class="mb-0 text-muted">© 2022 Company, Inc</p>
-            </a>
-            
 
-            <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre Nós</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contatos</a></li>
-            </ul>
+    <!-- CONTEÚDO 1 -->
+    <div class="row justify-content-center m-0 my-5">
+        <div class="w-75 border">
+            <div class="row">
+                <div class="col-6 p-5 border-end position-relative">
+                    <div class="first-content-half-one"></div>
+                    <h3 class="mb-4">Prepare-se para a melhor experiência da sua vida</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies cursus ex ac
+                        pharetra. In
+                        felis justo, rutrum id orci quis, feugiat pretium ex. Nullam vulputate odio ac metus mattis
+                        mollis. Morbi orci lacus, volutpat sit amet eros in, rhoncus faucibus velit. Aenean ac
+                        pretium
+                        elit. Morbi non semper enim. Aenean a mollis nisi, in sollicitudin quam.
+                    </p>
+                </div>
+                <div class="col-6 p-0" style="position: relative;">
+                    <div class="card m-3 justify-content-end align-items-center" style="width: 50%; height: 60%;">JS
+                    </div>
+                    <div class="card m-3 justify-content-end align-items-center"
+                        style="width: 50%; height: 60%; position: absolute; bottom: 0; right: 0;">HTML e CSS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO 2 -->
+    <div style="background-color: #2C2C2C; z-index: -2;"
+        class="row justify-content-center shadow position-relative m-0 mb-5">
+
+        <div id="content-two" style="width: 90%;" class="py-4">
+            <h3 class="text-center">NOSSA EQUIPE</h3>
+            <hr>
+            <h4>CONHEÇA OS ENVOLVIDOS DO PROJETO <span>OPEN MIND</span></h4>
+
+
+            <div class="row justify-content-evenly gap-0 column-gap-3" style="padding-top: 40px;">
+
+                <div id="about-person" class="col-6 col-md-4 py-5 text-center rounded shadow">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="rounded-circle d-flex bg-white justify-content-center align-items-center text-center "
+                            style="width: 90px; height: 90px; margin-top: -90px;"></div>
+                    </div>
+                    <h5 class="pt-2">Gabriel Diniz</h5>
+                    <h6 class="pb-2">PROGRAMADOR</h6>
+                    <p class="px-5">
+                        “Programo desde quando eu estava no útero da minha mãe”
+                    </p>
+
+                </div>
+                <div id="about-person" class="col-6 col-md-4 py-5 text-center rounded shadow">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="rounded-circle d-flex bg-white justify-content-center align-items-center text-center "
+                            style="width: 90px; height: 90px; margin-top: -90px;"></div>
+                    </div>
+                    <h5 class="pt-2">Luan Souza</h5>
+                    <h6 class="pb-2">Programador</h6>
+                    <p class="px-5">
+                        “Programo desde quando eu estava no útero da minha mãe”
+                    </p>
+
+                </div>
+                <div id="about-person" class="col-6 col-md-4 py-5 text-center rounded shadow">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="rounded-circle d-flex bg-white justify-content-center align-items-center text-center "
+                            style="width: 90px; height: 90px; margin-top: -90px;"></div>
+                    </div>
+                    <h5 class="pt-2">Guilherme Faria</h5>
+                    <h6 class="pb-2">Designer</h6>
+                    <p class="px-5">
+                        “Programo desde quando eu estava no útero da minha mãe”
+                    </p>
+
+                </div>
+                <div id="about-person" class="col-6 col-md-4 py-5 text-center rounded shadow">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="rounded-circle d-flex bg-white justify-content-center align-items-center text-center "
+                            style="width: 90px; height: 90px; margin-top: -90px;"></div>
+                    </div>
+                    <h5 class="pt-2">João Gabriel</h5>
+                    <h6 class="pb-2">Mídia Social</h6>
+                    <p class="px-5">
+                        “Programo desde quando eu estava no útero da minha mãe”
+                    </p>
+
+                </div>
+                <div id="about-person" class="col-6 col-md-4 py-5 text-center rounded shadow">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="rounded-circle d-flex bg-white justify-content-center align-items-center text-center "
+                            style="width: 90px; height: 90px; margin-top: -90px;"></div>
+                    </div>
+                    <h5 class="pt-2">Arthur Viana</h5>
+                    <h6 class="pb-2">Designer</h6>
+                    <p class="px-5">
+                        “Programo desde quando eu estava no útero da minha mãe”
+                    </p>
+
+                </div>
+                <div id="about-person" class="col-6 col-md-4 py-5 text-center rounded shadow">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="rounded-circle d-flex bg-white justify-content-center align-items-center text-center "
+                            style="width: 90px; height: 90px; margin-top: -90px;"></div>
+                    </div>
+                    <h5 class="pt-2">Lucas Paulo</h5>
+                    <h6 class="pb-2">Animador</h6>
+                    <p class="px-5">
+                        “Programo desde quando eu estava no útero da minha mãe”
+                    </p>
+
+                </div>
+                <div id="about-person" class="col-6 col-md-4 py-5 text-center rounded shadow">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="rounded-circle d-flex bg-white justify-content-center align-items-center text-center "
+                            style="width: 90px; height: 90px; margin-top: -90px;"></div>
+                    </div>
+                    <h5 class="pt-2">Miguel Ferreira</h5>
+                    <h6 class="pb-2">N/A</h6>
+                    <p class="px-5">
+                        “Programo desde quando eu estava no útero da minha mãe”
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div id="content-two-bg"></div>
+    </div>
+
+    <!-- CONTEÚDO 3 -->
+    <div class="row justify-content-center m-0 my-5">
+        <div class="w-75 border">
+            <div class="row">
+                <div class="col-5 p-5 border-end position-relative">
+                    <h3 class="mb-4">JOGO 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies cursus ex ac
+                        pharetra. In
+                        felis justo, rutrum id orci quis, feugiat pretium ex. Nullam vulputate odio ac metus mattis
+                        mollis. Morbi orci lacus, volutpat sit amet eros in, rhoncus faucibus velit. Aenean ac
+                        pretium
+                        elit. Morbi non semper enim. Aenean a mollis nisi, in sollicitudin quam.
+                    </p>
+                </div>
+                <div class="col-7 p-0 d-flex justify-content-center align-items-center flex-column"
+                    style="position: relative;">
+                    <div class="first-content-half-one"></div>
+                    <div class="card m-3 justify-content-end align-items-center" style="width: 80%; height: 70%;">JOGO 1
+                    </div>
+                    <button class="btn btn-primary">Jogue agora!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO 4 -->
+    <div class="row justify-content-center m-0 my-5">
+        <div class="w-75 border">
+            <div class="row">
+                <div class="col-5 p-5 border-end position-relative">
+                    <h3 class="mb-4">JOGO 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies cursus ex ac
+                        pharetra. In
+                        felis justo, rutrum id orci quis, feugiat pretium ex. Nullam vulputate odio ac metus mattis
+                        mollis. Morbi orci lacus, volutpat sit amet eros in, rhoncus faucibus velit. Aenean ac
+                        pretium
+                        elit. Morbi non semper enim. Aenean a mollis nisi, in sollicitudin quam.
+                    </p>
+                </div>
+                <div class="col-7 p-0 d-flex justify-content-center align-items-center flex-column"
+                    style="position: relative;">
+                    <div class="first-content-half-one"></div>
+                    <div class="card m-3 justify-content-end align-items-center" style="width: 80%; height: 70%;">JOGO 2
+                    </div>
+                    <button class="btn btn-primary">Jogue agora!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <div class="bg-white">
+        <footer
+            class="d-flex flex-column gap-3 flex-md-row justify-content-between align-items-center py-5 px-4 border-top">
+            <div style="height: 120px;" class="col-12 col-md-4 d-flex flex-column justify-content-between">
+                <a href="/"
+                    class="col-auto d-flex align-items-center justify-content-center justify-content-md-start text-dark text-decoration-none">
+                    <!-- <img height="70px" src="media/logoc.png" alt=""> -->
+                    <h5><span style="font-weight: 600;">OPEN MIND</span> © 2024 Todos os direitos reservados.</h5>
+                </a>
+                <div class="row text-dark justify-content-center justify-content-md-start">
+                    <div class="col-auto">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 row">
+                <div class="col-6 d-flex flex-column align-items-end align-items-md-start">
+                    <h6>Contato</h6>
+                    <p>(21) 98326-3928</p>
+                    <p>agenciasopenmind@gmail.com</p>
+                    <p>@ag.openmind</p>
+                </div>
+                <div class="col-6">
+                    <h6>Políticas</h6>
+                    <p>Termos e Condições</p>
+                    <p>Política de Privacidade</p>
+                    <p>Política de Cookies</p>
+                </div>
+            </div>
+
+
+
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
