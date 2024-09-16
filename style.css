@@ -85,6 +85,9 @@ ul li a {
     font-family: 'Montserrat';
     text-decoration: none;
     font-size: 14px;
+    border-width: 3px !important;
+    border-bottom-style: solid !important;
+    border-color: transparent !important;
 }
 
 header ul li a,
@@ -94,10 +97,9 @@ header ul li a:visited {
 
 ul li a:hover,
 ul li a:active {
-    padding-bottom: 10px;
-    border-width: 3px;
-    border-bottom-style: solid;
-    border-color: #985DC7;
+    border-width: 3px !important;
+    border-bottom-style: solid !important;
+    border-color: #985DC7 !important;
 }
 
 header ul li.active a {
