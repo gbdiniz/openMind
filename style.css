@@ -134,6 +134,14 @@ button.btn {
     border-color: #985DC7;
 }
 
+a.btn {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #985DC7;
+    border-color: #985DC7;
+}
+
 footer {
     color: black;
 }
