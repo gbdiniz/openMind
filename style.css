@@ -3,8 +3,9 @@
 }
 
 body {
-    opacity: 0;
-    transition: opacity 0.5s;
+    animation: loadAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     font-family: 'Raleway';
     background-color: rgb(36, 36, 36);
     color: white;
@@ -180,6 +181,16 @@ footer h6 {
     font-weight: 600;
 }
 
+@keyframes loadAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeSlideInAnimation {
     0% {
         transform: translateY(-100px);
@@ -194,7 +205,7 @@ footer h6 {
 
 @keyframes cardAnimation {
     0% {
-        transform: scale(2.5);
+        transform: scale(2);
         opacity: 0.4;
     }
 
