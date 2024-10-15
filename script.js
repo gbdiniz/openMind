@@ -1,9 +1,9 @@
 document.body.onload = () => {
-    document.body.style.opacity='1'
+    document.body.style.opacity = '1'
     // document.getElementById('header').style.top = 0
 };
 document.addEventListener('click', function (event) {
-    if (!event.target.matches('.nav-link')) return;
+    if (!event.target.matches('.nav-link') && !event.target.matches('.our-games')) return;
 
     event.preventDefault();
 

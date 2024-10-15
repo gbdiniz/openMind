@@ -44,6 +44,7 @@ header {
 .navbar-toggler {
     border: 0;
 }
+
 #first-content img[alt=js-icon] {
     height: 175px;
     z-index: 1;
@@ -64,6 +65,41 @@ header {
     bottom: 0;
     right: 0;
     position: absolute;
+}
+#about-person .team-avatar div {
+    width: 90px;
+    height: 90px;
+    margin-top: -90px;
+    background-position: center center;
+    background-size: cover;
+}
+
+#about-person:nth-child(1) .team-avatar div {
+    /* background-image: url('media/team/luan.jpg'); */
+}
+
+#about-person:nth-child(2) .team-avatar div {
+    background-image: url('media/team/luan.jpg');
+}
+
+#about-person:nth-child(3) .team-avatar div {
+    background-image: url('media/team/guilherme.jpg');
+}
+
+#about-person:nth-child(4) .team-avatar div {
+    background-image: url('media/team/barroso.jpg');
+}
+
+#about-person:nth-child(5) .team-avatar div {
+    background-image: url('media/team/arthur.jpg');
+}
+
+#about-person:nth-child(6) .team-avatar div {
+    /* background-image: url('media/team/arthur.jpg'); */
+}
+
+#about-person:nth-child(7) .team-avatar div {
+    background-image: url('media/team/miguel.jpg');
 }
 
 #content-two-bg {
@@ -229,7 +265,8 @@ header ul li.active a {
     height: 600px;
 }
 
-#fourth-content input:not([type=submit]), #fourth-content textarea {
+#fourth-content input:not([type=submit]),
+#fourth-content textarea {
     padding-bottom: 16px;
     background-color: transparent;
     border: 0;
@@ -248,23 +285,27 @@ header ul li.active a {
     border-color: #985DC7;
 }
 
-#fourth-content input:focus-visible, #fourth-content textarea:focus-visible {
+#fourth-content input:focus-visible,
+#fourth-content textarea:focus-visible {
     background-color: transparent;
     outline: 0;
 }
 
-input::placeholder, textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
     color: whitesmoke;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
     color: white;
 }
 
-textarea, input {
+textarea,
+input {
     color: white;
 }
- 
+
 button.btn {
     font-family: 'Montserrat';
     font-size: 14px;
@@ -279,6 +320,15 @@ a.btn {
     font-weight: 500;
     background-color: #985DC7;
     border-color: #985DC7;
+}
+
+.btn {
+    color: white;
+}
+
+.btn:hover {
+    background-color: #7d48a8;
+    border-color: #7d48a8;
 }
 
 footer {
