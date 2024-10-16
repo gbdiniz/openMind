@@ -1,7 +1,9 @@
+/* Retira a margem padrão de todos os elementos da página */
 * {
     margin: 0;
 }
 
+/* Caracteriza o body da página */
 body {
     animation: loadAnimation ease 2s;
     animation-iteration-count: 1;
@@ -11,22 +13,77 @@ body {
     color: white;
 }
 
+/* Caracteriza o header da página */
+header {
+    animation: bottomSlideInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Caracteriza o link na sua forma ativada do item da lista não ordenada do header */
+header ul li.active a {
+    color: white !important;
+}
+
+/* Caracteriza o item da lista não ordenada do header */
+ul li {
+    display: inline;
+}
+
+/* Caracteriza o item da lista não ordenada do header */
+ul li a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-size: 14px;
+    border-width: 3px !important;
+    border-bottom-style: solid !important;
+    border-color: transparent !important;
+}
+
+/* Caracteriza o item da lista não ordenada do header e o link na sua forma ao ser clicado do item da lista não ordenada */
+ul li a,
+header ul li a:visited {
+    color: white !important;
+}
+
+/* Caracteriza o link do item da lista não ordenada ao passar o mouse sobre e ao ser clicado */
+ul li a:hover,
+ul li a:active {
+    border-width: 3px !important;
+    border-bottom-style: solid !important;
+    border-color: #985DC7 !important;
+}
+
+/* Caracteriza o rodapé da página */
+footer {
+    color: black;
+}
+
+/* Caracteriza o título h6 do rodapé da página */
+footer h6 {
+    font-weight: 600;
+}
+
+/* Caracteriza o título h1 */
 h1 {
     font-weight: 800;
     font-size: 50px;
 }
 
+/* Caracteriza o título h2 */
 h2 {
     font-weight: 800;
     font-size: 26px;
     margin: 0;
 }
 
+/* Caracteriza o título h3 */
 h3 {
     font-size: 35px;
     font-weight: 700;
 }
 
+/* Caracteriza o título h5 e 56 */
 h5,
 h6 {
     font-family: "Montserrat", sans-serif;
@@ -36,14 +93,98 @@ h6 {
     letter-spacing: 1px;
 }
 
-header {
-    animation: fadeSlideInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+/* Caracteriza o placeholder do input e da textarea */
+input::placeholder,
+textarea::placeholder {
+    color: whitesmoke;
 }
 
+/* Caracteriza o input e a textarea ao ser focado */
+textarea:focus,
+input:focus {
+    color: white;
+}
+
+/* Caracteriza a textarea e o input */
+textarea,
+input {
+    color: white;
+}
+
+/* Caracteriza o botão com a classe btn */
+button.btn {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #985DC7;
+    border-color: #985DC7;
+}
+
+/* Caracteriza o link com a classe btn */
+a.btn {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #985DC7;
+    border-color: #985DC7;
+}
+
+/* Caracteriza a classe btn */
+.btn {
+    color: white;
+}
+
+/* Caracteriza a classe btn ao passar o mouse sobre */
+.btn:hover {
+    background-color: #7d48a8;
+    border-color: #7d48a8;
+}
+
+/* Caracteriza a classe navbar-toggler */
 .navbar-toggler {
     border: 0;
+}
+
+/* Caracteriza o id header */
+#header {
+    transition: background-color 1s;
+}
+
+/* Caracteriza a classe bg-header */
+.bg-header {
+    transition: background-color 1s;
+    background-color: #985DC7;
+}
+
+/* Caracteriza o link ao passar o mouse sobre e ao ser clicado no item da lista não ordenada na classe bg-header */
+.bg-header ul li a:hover,
+.bg-header ul li a:active {
+    border-width: 3px !important;
+    border-bottom-style: solid !important;
+    border-color: #ffffff !important;
+}
+
+/* Caracteriza a classe half-content */
+#half-content {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    z-index: 2;
+}
+
+/* Caracteriza a classe half-content-bg */
+#half-content-bg {
+    background-image: url('media/effect.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 #first-content {
@@ -78,26 +219,6 @@ header {
     transform: translateY(100px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .top-slidein-animation {
-        animation: topSlideInAnimation ease 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    .right-slidein-animation {
-        animation: rightSlideInAnimation ease 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    .left-slidein-animation {
-        animation: leftSlideInAnimation ease 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-}
-
 .about-person:nth-child(1) {
     animation-delay: .1s;
 }
@@ -126,20 +247,12 @@ header {
     animation-delay: .7s;
 }
 
-.about-person .team-avatar div {
-    width: 90px;
-    height: 90px;
-    margin-top: -90px;
-    background-position: center center;
-    background-size: cover;
-}
-
 .about-person:nth-child(1) .team-avatar div {
     background-image: url('media/team/diniz.jpg');
 }
 
 .about-person:nth-child(2) .team-avatar div {
-    background-image: url('media/team/luan.jpg');
+    background-image: url('media/team/luan.jpeg');
 }
 
 .about-person:nth-child(3) .team-avatar div {
@@ -163,6 +276,16 @@ header {
     background-image: url('media/team/miguel.jpg');
 }
 
+
+.about-person .team-avatar div {
+    width: 90px;
+    height: 90px;
+    margin-top: -90px;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Caracteriza a classe content-two-bg */
 #content-two-bg {
     background-image: url('media/effect3.jpg');
     background-position: bottom bottom;
@@ -176,15 +299,18 @@ header {
     z-index: -1;
 }
 
+/* Caracteriza o título h4 na classe content-two */
 #content-two h4 {
     text-align: center;
     font-size: 12px;
 }
 
+/* Caracteriza o título h6 na classe content-two */
 #content-two h6 {
     color: #985DC7;
 }
 
+/* Caracteriza o parágrafo na classe content-two */
 #content-two p {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -192,11 +318,13 @@ header {
     font-size: 12px;
 }
 
+/* Caracteriza o span na classe content-two */
 #content-two span {
     color: #985DC7;
 
 }
 
+/* Caracteriza a classe about-person */
 .about-person {
     max-width: 250px;
     margin-top: 50px;
@@ -204,90 +332,27 @@ header {
     background-color: rgb(36, 36, 36);
 }
 
+/* Caracteriza o título h6 na classe about-person quando a largura for até 576px */
 @media (max-width: 576px) {
     .about-person h6 {
         font-size: 12px;
     }
 }
 
-ul li {
-    display: inline;
-}
-
-ul li a {
-    font-family: 'Montserrat';
-    text-decoration: none;
-    font-size: 14px;
-    border-width: 3px !important;
-    border-bottom-style: solid !important;
-    border-color: transparent !important;
-}
-
-ul li a,
-header ul li a:visited {
-    color: white !important;
-}
-
-ul li a:hover,
-ul li a:active {
-    border-width: 3px !important;
-    border-bottom-style: solid !important;
-    border-color: #985DC7 !important;
-}
-
-header ul li.active a {
-    color: white !important;
-}
-
-#header {
-    transition: background-color 1s;
-}
-
-.bg-header {
-    transition: background-color 1s;
-    background-color: #985DC7;
-}
-
-.bg-header ul li a:hover,
-.bg-header ul li a:active {
-    border-width: 3px !important;
-    border-bottom-style: solid !important;
-    border-color: #ffffff !important;
-}
-
+/* Caracteriza a classe card-header */
 .card-header {
     height: 390px;
     max-height: 28vw;
     width: 80vw;
     max-width: 700px;
     overflow: hidden;
-    animation: cardAnimation ease 1s;
+    animation: zoomOutAnimation ease 1s;
     background-color: white;
     background-image: linear-gradient(transparent, rgb(87, 87, 87));
 }
 
-#half-content {
-    position: relative;
-    width: 100%;
-    height: 90%;
-    z-index: 2;
-}
-
-#half-content-bg {
-    background-image: url('media/effect.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    mix-blend-mode: multiply;
-    opacity: .6;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-#third-content #half-content div#first {
+/* Caracteriza a primeira div no id half-content no id third-content */
+#third-content #half-content:nth-child(1) div {
     width: 560px;
     height: 300px;
     max-width: 95%;
@@ -299,7 +364,8 @@ header ul li.active a {
     background-repeat: no-repeat;
 }
 
-#third-content #half-content div#second {
+/* Caracteriza a segunda div no id half-content no id third-content */
+#third-content #half-content:nth-child(2) div {
     width: 560px;
     height: 300px;
     max-width: 95%;
@@ -311,6 +377,7 @@ header ul li.active a {
     background-repeat: no-repeat;
 }
 
+/* Caracteriza o id fourth-content */
 #fourth-content {
     padding: 100px 0px 100px 0px;
     background: url('media/bg.jpg');
@@ -318,6 +385,7 @@ header ul li.active a {
     background-size: cover;
 }
 
+/* Caracteriza a div dentro do id fourth-content */
 #fourth-content>div {
     border: 4px solid #985DC7;
     background-color: #603b7f;
@@ -326,16 +394,7 @@ header ul li.active a {
     height: 600px;
 }
 
-#fourth-content input:not([type=submit]),
-#fourth-content textarea {
-    padding-bottom: 16px;
-    background-color: transparent;
-    border: 0;
-    width: 95%;
-    border-bottom: 2px solid whitesmoke;
-    /* border-right: 2px solid whitesmoke; */
-}
-
+/* Caracteriza o input type "submit" dentro do id fourth-content */
 #fourth-content input[type=submit] {
     width: 40%;
     height: 60px;
@@ -346,60 +405,46 @@ header ul li.active a {
     border-color: #985DC7;
 }
 
+/* Caracteriza o input que não tenha type "submit" e textarea dentro do id fourth-content */
+#fourth-content input:not([type=submit]),
+#fourth-content textarea {
+    padding-bottom: 16px;
+    background-color: transparent;
+    border: 0;
+    width: 95%;
+    border-bottom: 2px solid whitesmoke;
+    /* border-right: 2px solid whitesmoke; */
+}
+
+/* Caracteriza o input e textarea que esteja focado dentro do id fourth-content */
 #fourth-content input:focus-visible,
 #fourth-content textarea:focus-visible {
     background-color: transparent;
     outline: 0;
 }
 
-input::placeholder,
-textarea::placeholder {
-    color: whitesmoke;
+/* Classes das animações */
+@media (prefers-reduced-motion: no-preference) {
+    .top-slidein-animation {
+        animation: topSlideInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .right-slidein-animation {
+        animation: rightSlideInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .left-slidein-animation {
+        animation: leftSlideInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 }
 
-textarea:focus,
-input:focus {
-    color: white;
-}
-
-textarea,
-input {
-    color: white;
-}
-
-button.btn {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: 500;
-    background-color: #985DC7;
-    border-color: #985DC7;
-}
-
-a.btn {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: 500;
-    background-color: #985DC7;
-    border-color: #985DC7;
-}
-
-.btn {
-    color: white;
-}
-
-.btn:hover {
-    background-color: #7d48a8;
-    border-color: #7d48a8;
-}
-
-footer {
-    color: black;
-}
-
-footer h6 {
-    font-weight: 600;
-}
-
+/* Animação para carregar a página */
 @keyframes loadAnimation {
     0% {
         opacity: 0;
@@ -410,7 +455,8 @@ footer h6 {
     }
 }
 
-@keyframes fadeSlideInAnimation {
+/* Animação para carregar a animação com fade e slide de baixo */
+@keyframes bottomSlideInAnimation {
     0% {
         transform: translateY(-100px);
         opacity: 0;
@@ -421,6 +467,7 @@ footer h6 {
     }
 }
 
+/* Animação para carregar a animação com fade e slide da direita */
 @keyframes rightSlideInAnimation {
     0% {
         transform: translateX(-100%);
@@ -433,6 +480,7 @@ footer h6 {
     }
 }
 
+/* Animação para carregar a animação com fade e slide da esquerda */
 @keyframes leftSlideInAnimation {
     0% {
         transform: translateX(100%);
@@ -445,6 +493,7 @@ footer h6 {
     }
 }
 
+/* Animação para carregar a animação com fade e slide de cima */
 @keyframes topSlideInAnimation {
     0% {
         transform: translateY(100px);
@@ -457,7 +506,8 @@ footer h6 {
     }
 }
 
-@keyframes cardAnimation {
+/* Animação para carregar a animação com fade e zoom diminuindo */
+@keyframes zoomOutAnimation {
     0% {
         transform: scale(2);
         opacity: 0.4;
