@@ -89,10 +89,16 @@ h5,
 h6 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 15px;
     letter-spacing: 1px;
 }
+
+video {
+    object-fit: cover;
+    overflow: auto;
+}
+
 
 /* Caracteriza o placeholder do input e da textarea */
 input::placeholder,
@@ -355,6 +361,39 @@ a.btn {
 /* Caracteriza o título h6 na classe about-person quando a largura for até 576px */
 @media (max-width: 576px) {
     .about-person h6 {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Caracteriza a imagem com a descrição "js-icon" dentro do id first-content */
+    #first-content img[alt=js-icon] {
+        height: 125px;
+        z-index: 1;
+        position: absolute;
+    }
+
+    /* Caracteriza a imagem com a descrição "html-icon" dentro do id first-content */
+    #first-content img[alt=html-icon] {
+        height: 125px;
+        z-index: 1;
+        top: 10px;
+        left: 0;
+        position: absolute;
+    }
+
+    /* Caracteriza a imagem com a descrição "css-icon" dentro do id first-content */
+    #first-content .row .col-12:nth-child(2){
+       display: none;
+    }
+
+    #second-content p {
         font-size: 12px;
     }
 }
