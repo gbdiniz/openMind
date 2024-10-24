@@ -62,6 +62,7 @@ footer {
 /* Caracteriza o título h6 do rodapé da página */
 footer h6 {
     font-weight: 600;
+    width: 97%;
 }
 
 /* Caracteriza o título h1 */
@@ -187,17 +188,20 @@ a.btn {
     bottom: 0;
 }
 
+/* Caracteriza a classe first-content */
 #first-content {
     animation-delay: .25s;
     transform: translateX(-100%);
 }
 
+/* Caracteriza a imagem com a descrição "js-icon" dentro do id first-content */
 #first-content img[alt=js-icon] {
     height: 175px;
     z-index: 1;
     position: absolute;
 }
 
+/* Caracteriza a imagem com a descrição "html-icon" dentro do id first-content */
 #first-content img[alt=html-icon] {
     height: 175px;
     z-index: 1;
@@ -206,6 +210,7 @@ a.btn {
     position: absolute;
 }
 
+/* Caracteriza a imagem com a descrição "css-icon" dentro do id first-content */
 #first-content img[alt=css-icon] {
     height: 175px;
     z-index: 2;
@@ -214,69 +219,84 @@ a.btn {
     position: absolute;
 }
 
+/* Caracteriza a classe about-person */
 .about-person {
     opacity: 0;
     transform: translateY(100px);
 }
 
+/* Caracteriza o primeiro elemento que tem a classe about-person */
 .about-person:nth-child(1) {
     animation-delay: .1s;
 }
 
+/* Caracteriza o segundo elemento que tem a classe about-person */
 .about-person:nth-child(2) {
     animation-delay: .2s;
 }
 
+/* Caracteriza o terceiro elemento que tem a classe about-person */
 .about-person:nth-child(3) {
     animation-delay: .3s;
 }
 
+/* Caracteriza o quarto elemento que tem a classe about-person */
 .about-person:nth-child(4) {
     animation-delay: .4s;
 }
 
+/* Caracteriza o quinto elemento que tem a classe about-person */
 .about-person:nth-child(5) {
     animation-delay: .5s;
 }
 
+/* Caracteriza o sexto elemento que tem a classe about-person */
 .about-person:nth-child(6) {
     animation-delay: .6s;
 }
 
+/* Caracteriza o sétimo elemento que tem a classe about-person */
 .about-person:nth-child(7) {
     animation-delay: .7s;
 }
 
+/* Caracteriza a div localizada na classe team-avatar detro do primeiro elemento com a classe about-person */
 .about-person:nth-child(1) .team-avatar div {
     background-image: url('media/team/diniz.jpg');
 }
 
+/* Caracteriza a div localizada na classe team-avatar detro do segundo elemento com a classe about-person */
 .about-person:nth-child(2) .team-avatar div {
     background-image: url('media/team/luan.jpeg');
 }
 
+/* Caracteriza a div localizada na classe team-avatar detro do terceiro elemento com a classe about-person */
 .about-person:nth-child(3) .team-avatar div {
     background-image: url('media/team/guilherme.jpg');
     background-position: top center;
 }
 
+/* Caracteriza a div localizada na classe team-avatar detro do quarto elemento com a classe about-person */
 .about-person:nth-child(4) .team-avatar div {
     background-image: url('media/team/barroso.jpg');
 }
 
+/* Caracteriza a div localizada na classe team-avatar detro do quinto elemento com a classe about-person */
 .about-person:nth-child(5) .team-avatar div {
     background-image: url('media/team/arthur.jpg');
 }
 
+/* Caracteriza a div localizada na classe team-avatar detro do sexto elemento com a classe about-person */
 .about-person:nth-child(6) .team-avatar div {
     background-image: url('media/team/pl.jpg');
 }
 
+/* Caracteriza a div localizada na classe team-avatar detro do sétimo elemento com a classe about-person */
 .about-person:nth-child(7) .team-avatar div {
     background-image: url('media/team/miguel.jpg');
 }
 
-
+/* Caracteriza a div que está dentro da classe team-avatar, localizada dentro da classe about-person */
 .about-person .team-avatar div {
     width: 90px;
     height: 90px;
@@ -352,7 +372,7 @@ a.btn {
 }
 
 /* Caracteriza a primeira div no id half-content no id third-content */
-#third-content #half-content:nth-child(1) div {
+#third-content #game1 #half-content div {
     width: 560px;
     height: 300px;
     max-width: 95%;
@@ -365,12 +385,12 @@ a.btn {
 }
 
 /* Caracteriza a segunda div no id half-content no id third-content */
-#third-content #half-content:nth-child(2) div {
+#third-content #game2 #half-content div {
     width: 560px;
     height: 300px;
     max-width: 95%;
     max-height: 100%;
-    background-image: url('media/open-pong.JPG');
+    background-image: url('media/hit-mind.jpg');
     background-size: cover;
     background-position: center center;
     border-radius: 20px;
